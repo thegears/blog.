@@ -1,0 +1,286 @@
+body {
+  margin: 0px;
+  padding: px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #383737;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.top-container {
+  background-color: #5c5959;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+  font-size: 5em;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #ffd700;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.blog-title:hover {
+  color: #ffcc00;
+}
+.blog-subtitle {
+  font-size: 1.5em;
+  font-weight: lighter;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+}
+
+.blog-links a {
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 2em;
+  font-family: "Oswald", sans-serif;
+  border-bottom: 3px solid transparent;
+  transition: 0.6s ease-in-out;
+  position: relative;
+}
+
+.blog-links a:hover {
+  color: #ffcc00;
+  border-bottom: 3px solid #ffcc00;
+  transform: translateY(-5px);
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+.blog-links a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #ffcc00;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.posts-container {
+  padding: 100px;
+  background-color: #ffcc00;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.post {
+  margin-bottom: 50px;
+  background-color: #383737;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 600px;
+  height: auto;
+}
+.post-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  background-color: #585050;
+  padding: 20px;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 204, 0, 0.1) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 204, 0, 0.1) 50%,
+    rgba(255, 204, 0, 0.1) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+.post-title {
+  font-size: 2.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Oswald", sans-serif;
+}
+
+.post-content {
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+}
+.read-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #383737;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-weight: bolder;
+  font-size: large;
+  font-family: "Oswald", sans-serif;
+  border: 2px solid #ffffff;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.read-more-button:hover {
+  background-color: #ffcc00;
+  color: #383737;
+}
+
+.about-container {
+  background-color: #5c5959;
+  padding: 180px;
+}
+.about-title {
+  font-size: 3em;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.about-content-title {
+  font-size: 3em;
+  font-weight: bolder;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+}
+
+.about-content {
+  font-size: 1.5em;
+  line-height: 1.8;
+  font-family: "Open Sans", sans-serif;
+}
+
+.about-link {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.about-link:hover {
+  color: #ffcc00;
+}
+
+.contact-container {
+  padding: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.contact-form input,
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: "Open Sans", sans-serif;
+  background-color: #555454;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #383737;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 1.5em;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #ffcc00;
+  color: #383737;
+}
+
+@media (max-width: 480px) {
+  .blog-title {
+    font-size: 2em;
+  }
+
+  .blog-subtitle {
+    font-size: 0.9em;
+    display: none;
+  }
+
+  .blog-links a {
+    font-size: 1em;
+    margin-left: 5px;
+    padding: 3px;
+  }
+
+  .top-container {
+    padding: 5px;
+  }
+
+  .posts-container {
+    padding: 20px 10px;
+  }
+
+  .post {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .post-icon {
+    font-size: 3em;
+    padding: 10px;
+  }
+
+  .post-title {
+    font-size: 1.5em;
+  }
+
+  .post-content {
+    font-size: 0.95em;
+  }
+
+  .read-more-button {
+    padding: 8px 15px;
+    font-size: medium;
+  }
+
+  .about-container,
+  .contact-container {
+    padding: 30px 15px;
+  }
+
+  .about-title {
+    font-size: 1.5em;
+  }
+
+  .about-content-title {
+    font-size: 1.3em;
+  }
+
+  .about-content {
+    font-size: 1em;
+  }
+
+  .contact-label {
+    font-size: 1em;
+  }
+}
