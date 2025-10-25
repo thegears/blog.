@@ -14,6 +14,9 @@ body {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .blog-title {
@@ -197,6 +200,7 @@ textarea {
   font-size: 1.2em;
   font-family: "Open Sans", sans-serif;
   background-color: #555454;
+  color: #ffffff;
 }
 
 .contact-form button {
